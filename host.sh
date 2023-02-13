@@ -23,7 +23,7 @@ fi
 }
 
 hostfinder() {
-	echo "\aInput Domain [ex : example.com]"		
+	echo " [Ejemplo : google.com]"		
 		read -p " ╰─>~#  "  target
 			command=$(wget http://api.hackertarget.com/hostsearch/?q=$target -q -O .-)
 			echo $yellow"\a["$red"+"$yellow"]"$white Host Finder
