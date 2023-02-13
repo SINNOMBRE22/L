@@ -35,18 +35,6 @@ hostfinder() {
 }
 
 
-
-}
-extraclink() {
-	echo "\aInput Domain [ex : example.com]"
-		echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux "$white
-		read -p " ╰─>~#  "  target
-			command=$(wget https://api.hackertarget.com/pagelinks/?q=$target -q -O .-)
-			echo $yellow"\a["$red"+"$yellow"]"$white Extraclink
-			echo $green
-				cat .-
-				reas
-}
 restartprogram() {
 	sleep 1
 	echo "\a Permission Denied"
