@@ -142,23 +142,13 @@ echo "  "
 echo "Buscar host disponibles"
 
 echo '''
-	~{1}--DNS Lookup
-	~{2}--Reverse DNS Lookup
-	~{3}--Whois Lookup
-	~{4}--GeoIP Lookup
+	~{1}--Buscar host
 	~{5}--Host Finder
-	~{6}--HTTP Header
-	~{7}--Host DNS Finder
-	~{8}--Port Scanner
-	~{9}--Subnet Lookup
-	~{10}-Zone Transfer
-	~{11}-Exatrac Links
-	~{00}-Quit
-	~{99}-About
+	~{00}-Salir
+	~{99}-Acerca de autor
 '''
 
-echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux"$white
-read -p " ╰─>~#  "  select
+echo  " ╰─>~#  "  select
 
 if [ $select -eq 00 ];
 	then
