@@ -46,12 +46,12 @@ echo "  "
 echo "Buscar host disponibles"
 
 echo '''
-	~{1}--Buscar host
-	~{00}-Salir
-	~{99}-Acerca de autor
+	1--Buscar host
+	00-Salir
+	99-Acerca de autor
 '''
 
-echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux"$white
+echo "╭─" "AMR@localhost" " ~/INmux"$white
 read -p " ╰─>~#  "  select
 
 if [ $select -eq 00 ];
