@@ -8,13 +8,13 @@ white="\033[39;1m"
 #echo $green
 reas() {
 	echo $white
-	read -p "B/back or E/Exit : " be
+	read -p "B/Regresar o E/Cerrar : " be
 if [ $be = "B" ]
 	then
 		menu
 elif [ $be = "E" ]
 	then
-		echo "Byee :) "
+		echo "Gracias por usar este repositorio :) "
 		exit
 else
 	echo "Bye :)"
