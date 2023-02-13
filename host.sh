@@ -43,7 +43,7 @@ restartprogram() {
 }
 menu() {
 echo "  "
-echo "Buscar host disponibles"
+echo "Buscar host disponibles: "
 
 echo '''
 	1--Buscar host
@@ -51,17 +51,17 @@ echo '''
 	99-Acerca de autor
 '''
 
-echo "╭─" "AMR@localhost" " ~/INmux"$white
+echo "╭─" " ~/host"
 read -p " ╰─>~#  "  select
 
 if [ $select -eq 00 ];
 	then
-		echo " Byee :)"
+		echo " Gracias por usar este repositorio :)"
 		exit
 elif [ $select -eq 99 ];
 	then
 		echo '''
-	Author by       : Termuxbyte
+	Autor           : Termuxbyte
         version         : 0.1
     
 '''
