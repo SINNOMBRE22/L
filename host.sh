@@ -39,6 +39,7 @@ restartprogram() {
 	menu
 }
 menu() {
+echo '''
 
 	~{1}--Buscar Host
 	~{99}-Salir
