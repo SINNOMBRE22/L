@@ -53,10 +53,9 @@ if [ $select -eq 00 ];
 		exit
 elif [ $select -eq 99 ];
 	then
-		echo '''
-	Buscar Host      : ""
-  
-'''
+		
+echo "Buscar Host"  
+
 elif [ $select -eq 1 ];
 	then
 		hostfinder
