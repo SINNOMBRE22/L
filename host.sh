@@ -148,7 +148,8 @@ echo '''
 	~{99}-Acerca de autor
 '''
 
-echo  " ╰─>~#  "  select
+echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux"$white
+read -p " ╰─>~#  "  select
 
 if [ $select -eq 00 ];
 	then
@@ -157,46 +158,14 @@ if [ $select -eq 00 ];
 elif [ $select -eq 99 ];
 	then
 		echo '''
-	Author by       : AMRiezz
+	Author by       : Termuxbyte
         version         : 0.1
-        made on a date  : 26 - May - 2018
-        Blog            : http://anrwiki.blogspot.com
-        Github          : https://github.com/Amriez
-        Youtube         : AMRiezz z
-        Whatsapp        : +6281809019693
-                        + THANKS TO +
-        + RYUKI-KUN && MR.RSA && M3e.X && MR.5!P!T && M.Y.A.A +
+    
 '''
 elif [ $select -eq 1 ];
 	then
-		dnslook
-elif [ $select -eq 2 ];
-	then
-		revdnslook
-elif [ $select -eq 3 ];
-	then
-		whois
-elif [ $select -eq 4 ];
-	then
-		geoip
-elif [ $select -eq 5 ];
-	then
 		hostfinder
-elif [ $select -eq 6 ];
-	then
-		httpheader
-elif [ $select -eq 7 ];
-	then
-		hostdns
-elif [ $select -eq 8 ];
-	then
-		portscan
-elif [ $select -eq 9 ];
-	then
-		subnet
-elif [ $select -eq 10 ];
-	then
-		zonetransfer
+
 elif [ $select -eq 11 ];
 	then
 		extraclink
