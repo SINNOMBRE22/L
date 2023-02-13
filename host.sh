@@ -21,46 +21,8 @@ else
 	exit
 fi
 }
-whois() {
-	echo "\aInput Domain [ex : example.com]"
-                echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux "$white
-                read -p " ╰─>~#  "  target
-                        command=$(wget http://api.hackertarget.com/whois/?q=$target -q -O .-)
-			echo $yellow"\a["$red"+"$yellow"]"$white Whois Lookup
-			echo $green
-                                cat .-
-				reas
-}
-dnslook() {
-	echo "\aInput Domain [ex : example.com]"
-		echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux "$white
-		read -p " ╰─>~#  "  target
-			command=$(wget http://api.hackertarget.com/dnslookup/?q=$target -q -O .-)
-			echo $yellow"\a["$red"+"$yellow"]"$white DNS Lookup
-			echo $green
-				cat .-
-				reas
-}
-revdnslook() {
-	echo "\aInput Domain [ex : example.com]"
-		echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux "$white
-		read -p " ╰─>~#  "  target
-			command=$(wget http://api.hackertarget.com/reverseiplookup/?q=$target -q -O .-)
-			echo $yellow"\a["$red"+"$yellow"]"$white Reverse DNS Lookup
-			echo $green
-				cat .-
-				reas
-}
-geoip() {
-	echo "\aInput IP Address [ex : 123.456.789] or [ex : example.com]"
-		echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux "$white
-		read -p " ╰─>~#  "  target
-			command=$(wget http://api.hackertarget.com/geoip/?q=$target -q -O .-)
-			echo $yellow"\a["$red"+"$yellow"]"$white Geolocation Ip
-			echo $green
-				cat .-
-				reas
-}
+
+
 hostfinder() {
 	echo "\aInput Domain [ex : example.com]"
 		echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux "$white
@@ -71,55 +33,9 @@ hostfinder() {
 				cat .-
 				reas
 }
-httpheader() {
-	echo "\aInput Domain [ex : example.com]"
-		echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux "$white
-		read -p " ╰─>~#  "  target
-			command=$(wget http://api.hackertarget.com/httpheaders/?q=$target -q -O .-)
-			echo $yellow"\a["$red"+"$yellow"]"$white Http Header
-			echo $green
-				cat .-
-				reas
-}
-hostdns() {
-	echo "\aInput Domain [ex : example.com]"
-		echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux "$white
-		read -p " ╰─>~#  "  target
-			command=$(wget https://api.hackertarget.com/mtr/?q=$target -q -O .-)
-			echo $yellow"\a["$red"+"$yellow"]"$white Host DNS
-			echo $green
-				cat .-
-				reas
-}
-portscan() {
-	echo "\aInput Domain [ex : example.com]"
-		echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux "$white
-		read -p " ╰─>~#  "  target
-			command=$(wget https://api.hackertarget.com/mtr/?q=$target -q -O .-)
-			echo $yellow"\a["$red"+"$yellow"]"$white Portscan
-			echo $green
-				cat .-
-				reas
-}
-subnet() {
-	echo "\aInput Ip Address [ex : 123.456.789] "
-		echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux "$white
-		read -p " ╰─>~#  "  target
-			command=$(wget https://api.hackertarget.com/subnetcalc/?q=$target -q -O .-)
-			echo $yellow"\a["$red"+"$yellow"]"$white Subnet
-			echo $green
-				cat .-
-				reas
-}
-zonetransfer() {
-	echo "\aInput Domain [ex : example.com]"
-		echo $white "╭─"$green"AMR@localhost"$cyan" ~/INmux "$white
-		read -p " ╰─>~#  "  target
-			command=$(wget https://api.hackertarget.com/zonetransfer/?q=$target -q -O .-)
-			echo $yellow"\a["$red"+"$yellow"]"$white ZONE Transfer
-			echo $green
-				cat .-
-				reas
+
+
+
 }
 extraclink() {
 	echo "\aInput Domain [ex : example.com]"
@@ -143,7 +59,6 @@ echo "Buscar host disponibles"
 
 echo '''
 	~{1}--Buscar host
-	~{5}--Host Finder
 	~{00}-Salir
 	~{99}-Acerca de autor
 '''
