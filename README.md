@@ -1,2 +1,2 @@
 # host
-Buscar host 
+Buscar host disponible
