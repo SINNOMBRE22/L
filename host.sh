@@ -17,7 +17,7 @@ elif [ $be = "E" ]
 		echo "Gracias por usar este repositorio :) "
 		exit
 else
-	echo "Bye :)"
+	echo "adios ;-) "
 	exit
 fi
 }
@@ -58,7 +58,7 @@ if [ $select -eq 00 ];
 elif [ $select -eq 99 ];
 	then
 		echo '''
-	Autor           : Termuxbyte
+	Autor           : SinNombre™
         version         : 0.1
     
 '''
