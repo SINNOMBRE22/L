@@ -53,7 +53,7 @@ read -p " ╰─>~#  "  select
 
 if [ $select -eq 00 ];
 	then
-		echo " Gracias por usar este repositorio :)"
+		echo " Gracias por usar este script :)"
 		exit
 elif [ $select -eq 99 ];
 	then
